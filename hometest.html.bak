@@ -6,7 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <link type="text/css" rel="stylesheet" href="css/hometest.css" />
+  <link type="text/css" rel="stylesheet" href="css/test.css" />
   <title>Document</title>
  </head>
  <body>
@@ -65,6 +65,7 @@
  <textarea type="tetx" style="overflow:hidden" cols="100" rows="20">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物、或概念的一种表达形式。可以是对物理实体；可以是某种图形；或者是一种数学表达式。</textarea>
  <br/>
  <input type="button" value="计算分数"/>
-</div>	  
+</div>
+	  
  </body>
 </html>
