@@ -1,0 +1,55 @@
+p, h1, h2, div {
+	padding: 0;
+	margin:0;
+	}
+#wrap {
+	width: 1000px;
+	margin-left: 50px;
+	overflow: hidden;
+	}
+
+h1 {
+ text-align: center;
+ }
+
+h4 span {
+	display: inline;
+	height:24px;
+	line-height: 24px;
+    margin-right: 52px;
+ }
+ #nav p {
+	margin-top: -15px;
+	}
+ #nav span {
+	width:30px;
+	height:24px;
+	line-height: 24px;
+	margin-left: 10px;
+	}
+ #nav input {
+	 margin-right: 10px;
+	}
+
+#content {
+	 margin: 20px 0;
+	 }
+#content dd,#content dt {
+	float: left;
+	}
+
+#content .p_num2 input{
+	margin-right: 10px;
+	}
+
+#content p {
+	margin: 5px 0;
+	}
+#content p {
+	text-indent: 4px;
+	}
+
+textarea {
+	text-indent: 2px;
+	color: #000;
+	}
