@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link type="text/css" rel="stylesheet" href="css/hometest.css" />
+  <title>统一建模语言理论测试</title>
+ </head>
+ <script type="text/javascript">
+</script>
+ <body>
+ <div id="wrap">
+   <div id='title"'>
+      <h1>统一建模语言理论测试</h1>
+          班级：<input type="test" id="txt" value="01班"/>
+          学号：<input type="text" id="ID" value="0200231183"/>
+          姓名：<input type="text" value= "黄丽云"/>
+    </div>
+    <div  id='test_one'>
+          <h2>一、填空题（每空5分，共20分）</h2>
+            <label>1.UML的中文全称是：</label>
+            <input type="text" value="统一建模语言" name="统一建模语言"/><br/>
+            <label>2.对象最突出的特征是：</label>
+            <input type="text" value="封装性" name="封装性"/>
+            <input type="text" value="继承性" name="继承性"/>
+            <input type="text" value="多态性" name="多态性"/>
+    </div>
+    <div id="test_two">
+      <h2>二、选择题（每题10分，共20分）</h2>
+          <from id='section_two_from_1'>
+             <p>1. UML与软件工程的关系是：<p/>
+             <input type="radio" value="是软件工程" name="test_two_1" />(A) UML就是软件工程<br/>
+             <input type="radio" value="是软件工程" name="test_two_1" checked="checked"/>
+                (B) UML参与到软件工程中软件开发过程的几个阶段<br/>
+             <input type="radio" value="是软件工程" name="test_two_1" />(C) UML与软件工程无关<br/>
+             <input type="radio" value="是软件工程" name="test_two_1" />(D) UML是软件工程的一部分<br/>
+          </from>
+          <from id='section_two_from_2'>
+              <p>2. Java语言支持：</p>
+              <input type="radio" value=" " checked="checked" name="test_two_2"/>(A)单继承  <br/>
+              <input type="radio" value=" " name="test_two_2"/>(B)多继承 <br/>
+              <input type="radio" value=" " name="test_two_2"/>(C) 单继承和多继承都支持 <br/>
+              <input type="radio" value=" " name="test_two_2"/>(D) 单继承和多继承都不支持 <br/>
+         </from>
+    </div>
+    <div id="test_three">
+      <h2>三、多选题（每题10分，共个20分）</h2>
+          <from id="checkbox1_from">
+               <p>1. 用例的粒度分为以下哪三种：</p>
+               <input type="checkbox" checked="checked" />概述级<br/>
+               <input type="checkbox" checked="checked" />需求级<br/> <input type="checkbox"/>用户目标级<br/>
+               <input type="checkbox" checked="checked" />子功能级<br/>
+          </from>
+          <from>
+               <p>2. 类图由以下哪三部分组成：</p>
+               <input type="checkbox" checked="checked" />(A) 名称(Name) <br/>
+               <input type="checkbox" checked="checked" />(B) 属性(Attribute) <br/>
+               <input type="checkbox" checked="checked" />(C) 操作(Operation)<br/>
+               <input type="checkbox"/>(D) 方法(Function)<br/>
+          </from>
+    </div>
+    <div id="test_four">
+     <h2>四、判断题（每题10分，共20分）</h2>
+        <p>
+            1. 用例图只是用于和客户交流和沟通的,用于确定需求。
+            <input type="radio" name="test_four_1"/>√
+            <input type="radio" checked="checked" name="test_four_1"/>×
+        </p>
+        <p>
+            2. 在状态图中,终止状态在一个状态图中允许有任意多个。
+            <input type="radio" checked="checked" name="test_fou_2"/>√
+            <input type="radio" name="test_four_2" />×</p>
+        </p>
+    </div>
+     <div id="test_five">
+         <h2>五、简答题（每题20分，共20分）</h2>
+         <p>1. 简述什么是模型以及模型的表现形式？</p>
+         <textarea type="tetx" style="overflow:hidden" cols="100" rows="20" id="textarea">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物、或概念的一种表达形式。可以是对物理实体；可以是某种图形；或者是一种数学表达式。</textarea>
+         <br/>
+        <input type="button" value="计算分数" id="cal_score"/>
+
+    </div>
+</div>
+   <script type="text/javascript">
+
+        var oDiv1 = document.getElementById('test_one');
+        var oDiv2 = document.getElementById('test_two');
+        var oDiv3 = document.getElementById('test_three')
+        var oDiv4 = document.getElementById('test_four');
+        var oDiv5 = document.getElementById('test_five');
+        var oTextarea = document.getElementById('textarea');
+        var aFrom = oDiv2.getElementsByTagName('from');
+        var checkbox1_from = oDiv3.getElementsByTagName('from')[0];
+
+        var aInput = oDiv1.getElementsByTagName('input');
+        var aInput2_1 = oDiv2.getElementsByTagName('input');
+        var aInput3 = checkbox1_from.getElementsByTagName('input');
+        var checkbox2_from = oDiv3.getElementsByTagName('from')[1];
+        var aInput4 = checkbox2_from.getElementsByTagName('input');
+        var aInput5 = oDiv4.getElementsByTagName('input');
+        var oBtn_score = document.getElementById('cal_score');
+        var score = 0;
+        var str = "模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物、或概念的一种表达形式。可以是对物理实体；可以是某种图形；或者是一种数学表达式。"
+
+
+        /*var str = ["统一建模语言" ,"封装性","继承性" ,"多态性"];*/
+        function cal_score(){
+            var offon = true;
+            oBtn_score.onclick = function(){
+            tianKong();
+            radioSelect();
+            multiSelect_1();
+            multiSelect_2();
+            panDuan();
+            textArea();
+            alert(score+'分');
+            console.log(score);
+            if(oBtn_score.onclick ){
+              oBtn_score.disabled = 'disabled';
+                }
+            };
+          }
+        //第一题
+         function tianKong(){
+             if(aInput[0].value === '统一建模语言'){
+                score += 5;
+             }
+             if(aInput[1].value === '封装性'){
+                score += 5;
+             }
+             if(aInput[2].value === '继承性'){
+                score += 5;
+             }
+            if(aInput[3].value === '多态性'){
+                score += 5;
+             }
+           }
+
+         //第二题
+          function radioSelect(){
+                    if(aInput2_1[1].checked){
+                        score += 10;
+                    }else{
+                        score += 0;
+                    }
+                    if(aInput2_1[4].checked){
+                        score += 10;
+                    }else{
+                        score += 0;
+                    }
+
+                }
+
+     //第三题
+          function multiSelect_1(){
+             // console.log('第三题form下的长度: '+aInput3.length);
+             if(aInput3[0].checked && aInput3[1].checked && aInput3[3].checked  ){
+              if( !aInput3[2].checked ){
+                  console.log('you are right,good~');
+                  score += 10;
+                 }else{
+                 // console.log('嗷嗷，第三题第一个，你错了！');
+                 }
+             }
+
+          }
+
+          function multiSelect_2(){
+             console.log('第三题form下第二个的长度: '+aInput4.length);
+             if(aInput4[0].checked && aInput4[1].checked && aInput4[2].checked ){
+                  //console.log('you are right,good~');
+                  if(aInput4[3].checked == false){
+                  score += 10;
+                 }else{
+                  //console.log(' 第三题form下的第二个，你错了！');
+                 }
+             }
+
+          }
+          //第四题
+          function panDuan(){
+              if(aInput5[1].checked){
+                  //console.log('hou hou ,对了！~');
+                  score += 10;
+              }else{
+                  score += 0;
+                  //console.log("第四题第一节错了");
+              }
+              if(aInput5[2].checked){
+                  //console.log('第四题第2节,对了！~');
+                  score +=10;
+              }else{
+                  score += 0;
+                  //console.log("第四题第2节错了");
+              }
+          }
+
+          /* 第五题*/
+          console.log(oTextarea.innerText);
+          function textArea(){
+
+              if(oTextarea.value === str){
+                  //console.log('你答对了这段话');
+                  score +=20;
+              }else{
+                  //console.log('笨蛋，答错了啦~！');
+                  score +=0;
+              }
+          }
+
+      cal_score();
+    </script>
+ </body>
+</html>
