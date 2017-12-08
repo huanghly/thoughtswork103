@@ -20,14 +20,14 @@ describe("beersong",function(){
     {
         let count_=count-1;
         if(count>1)
-            it(count+' '+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+count_+BottlesOnTheWall,function testCountMoreThan1(){
+            it(count+' '+BottlesOnTheWall+count+' '+BottlesOfBeer+'\n'+TakeDown+count_+BottlesOnTheWall,function testCountMoreThan1(){
                 let result=beersong(count);
-                expect(result).to.equal(count+"&nbsp"+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+count_+BottlesOnTheWall);
+                expect(result).to.equal(count+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+count_+BottlesOnTheWall);
             });
         else if(count==1)
-            it(count+' '+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+NoMore,function testCountEqual1(){
+            it(count+' '+BottlesOnTheWall+count+' '+BottlesOfBeer+'\n'+TakeDown+NoMore,function testCountEqual1(){
                 let result=beersong(count);
-                expect(result).to.equal(count+"&nbsp"+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+NoMore);
+                expect(result).to.equal(count+BottlesOnTheWall+count+BottlesOfBeer+'\n'+TakeDown+NoMore);
             });
         else
             it(None,function testCountEqual1(){
