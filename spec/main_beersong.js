@@ -8,6 +8,7 @@ chai.use(sinonChai);
 
 
 var beersong=require("../lib/beersong.js");
+
 var BottlesOnTheWall='bottles of beer on the wall,';
 var BottlesOfBeer='bottles of beer.';
 var TakeDown='Take one down, pass it around,';
